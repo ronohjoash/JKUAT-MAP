@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<Head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+<body>
+<div id ='map' style="width:900px; height:580px"></div>
+<script>
+var mapOptions={center:[-1.092114,37.01508],zoom:15
+}
+var map= L.map('map',mapOptions)
+var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer);
+</script>
+</body>
+</html>
+
